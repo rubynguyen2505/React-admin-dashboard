@@ -6,7 +6,7 @@ import { useNotificationProvider } from "@refinedev/antd";
 import "@refinedev/antd/dist/reset.css";
 
 import { authProvider, dataProvider, liveProvider } from "./providers";
-import { Home, ForgotPassword, Login, Register } from "./pages";
+import { Home, ForgotPassword, Login, Register, CompanyList, Create, EditPage } from "./pages";
 import { CatchAllNavigate } from "@refinedev/react-router-v6";
 
 import routerBindings, {
@@ -56,7 +56,11 @@ function App() {
                     </Authenticated>
                     }> 
                       <Route index element={<Home />} />
-
+                      <Route path="/companies">
+                        <Route index element={<CompanyList />} />
+                        <Route path="new" element={<Create />} />
+                        <Route path="edit/:id" element={<EditPage />} />
+                      </Route>
                   </Route>
                 </Routes>
                 <RefineKbar />
