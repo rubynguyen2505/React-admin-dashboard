@@ -1,4 +1,4 @@
-import CustomAvatar from '@/components/custom.avatar';
+import CustomAvatar from '@/components/custom-avatar';
 import { COMPANIES_LIST_QUERY } from '@/graphql/queries';
 import { Company } from '@/graphql/schema.types';
 import { SearchOutlined } from '@ant-design/icons';

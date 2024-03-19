@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Popover, Button } from 'antd';
-import CustomAvatar from '../custom.avatar';
+import CustomAvatar from '../custom-avatar';
 import { useGetIdentity } from '@refinedev/core';
 import type { User } from '@/graphql/schema.types';
 import { Text } from '@/components/text';
