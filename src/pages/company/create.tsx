@@ -1,4 +1,4 @@
-import { CompanyList } from './list'
+import { CompanyListPage } from './list'
 import { Form, Input, Modal, Select } from 'antd'
 import { useModalForm, useSelect } from '@refinedev/antd'
 import { useGo } from '@refinedev/core'
@@ -8,7 +8,7 @@ import { SelectOptionWithAvatar } from '@/components/select-option-with-avatar'
 import { UsersSelectQuery } from '@/graphql/types'
 import { GetFieldsFromList } from '@refinedev/nestjs-query'
 
-export const Create = () => {
+export const CompanyCreatePage = () => {
     const go = useGo();
     const goToListPage = () => {
         go({
@@ -43,7 +43,7 @@ export const Create = () => {
     })
 
     return (
-        <CompanyList>
+        <CompanyListPage>
             <Modal
                 {...modalProps}
                 mask={true}
@@ -92,7 +92,7 @@ export const Create = () => {
                     </Form.Item>
                 </Form>
             </Modal>
-        </CompanyList>
+        </CompanyListPage>
     )
 }
 

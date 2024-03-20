@@ -9,7 +9,7 @@ import { USERS_SELECT_QUERY } from '@/graphql/queries'
 import { SelectOptionWithAvatar } from '@/components/select-option-with-avatar'
 import { businessTypeOptions, companySizeOptions, industryOptions } from '@/constants'
 import { CompanyContactsTable } from './contacts-table'
-export const EditPage = () => {
+export const CompanyEditPage = () => {
     const { saveButtonProps, formProps, formLoading, queryResult} = useForm({
         redirect: false,
         meta: {

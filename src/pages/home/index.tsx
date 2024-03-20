@@ -5,7 +5,7 @@ import { useCustom } from '@refinedev/core';
 import { Col, Row } from 'antd';
 import React from 'react';
 
-export const Home = () => {
+export const DashboardPage = () => {
     const { data, isLoading } = useCustom<DashboardTotalCountsQuery>({
         url: '',
         method: 'get',
